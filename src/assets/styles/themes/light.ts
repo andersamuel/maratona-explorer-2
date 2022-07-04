@@ -1,0 +1,17 @@
+export default {
+  title: "light",
+  colors: {
+    primary: "#00082F",
+    secondary: "#FFF",
+
+    firstBorder: "#EDF2FF",
+    secondBorder: "#4263EB",
+
+    description: "#00082f93",
+
+    button: "#4263eb",
+    button_hover: "#364fc7",
+
+    background: "#E5E5E5",
+  },
+};
