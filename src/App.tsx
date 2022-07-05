@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { GlobalStyle } from "./assets/styles/global";
-import { Switcher } from "./components/switcher";
 
 import { Links } from "./pages/links";
+import { Switcher } from "./components/switcher";
+import { Navbar } from "./components/navbar";
 
 import { ThemeProvider } from "styled-components";
 import dark from "./assets/styles/themes/dark";
@@ -15,9 +16,9 @@ const App: React.FC = () => {
     const recoveredTheme = localStorage.getItem("theme");
 
     if (!recoveredTheme) {
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("theme", "dark");
       setTheme(dark);
-    } else if (recoveredTheme === "dark") {
+    } else if (recoveredTheme === "light") {
       setTheme(light);
     } else setTheme(dark);
 
@@ -40,7 +41,10 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <Navbar />
+
       <Links />
+
       <Switcher toggleTheme={toggleTheme} />
 
       <GlobalStyle />

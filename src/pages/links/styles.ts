@@ -18,24 +18,6 @@ export const Container = styled.div`
   align-items: center;
   position: relative;
   transition: all 300ms ease-out;
-
-  ul {
-    width: 100%;
-    margin-top: 40px;
-
-    li {
-      width: 100%;
-    }
-  }
-
-  footer {
-    margin-top: 30px;
-    color: ${(props) => props.theme.colors.description};
-
-    a {
-      color: ${(props) => props.theme.colors.description};
-    }
-  }
 `;
 
 export const ProfileImage = styled.img`
@@ -48,6 +30,7 @@ export const ProfileImage = styled.img`
   padding: 4px;
   border: 4px solid ${(props) => props.theme.colors.border};
   position: relative;
+  box-sizing: content-box;
 `;
 
 export const ProfileName = styled.h1`
@@ -64,23 +47,9 @@ export const ProfileSocial = styled.a`
   font-family: "Roboto Mono", monospace;
 `;
 
-export const Link = styled.a`
-  height: 55px;
-  color: ${(props) => props.theme.colors.secondary};
-  font-size: 14px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  margin: 0 20px 18px 20px;
-  text-transform: uppercase;
-  background-color: ${(props) => props.theme.colors.button};
-  transition: background-color 300ms ease-in-out;
-
-  &:hover {
-    background-color: ${(props) => props.theme.colors.button_hover};
-  }
+export const List = styled.ul`
+  width: 100%;
+  margin-top: 40px;
 `;
 
 export const YoutubeLogo = styled(FiYoutube)`
@@ -97,4 +66,13 @@ export const TwitterLogo = styled(FiTwitter)`
 
 export const GithubLogo = styled(FiGithub)`
   ${icon}
+`;
+
+export const Footer = styled.footer`
+  margin-top: 30px;
+  color: ${(props) => props.theme.colors.description};
+`;
+
+export const PersonalLink = styled.a`
+  color: ${(props) => props.theme.colors.description};
 `;

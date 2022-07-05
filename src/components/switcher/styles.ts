@@ -6,6 +6,7 @@ const icon = css`
   width: 25px;
   height: 25px;
   padding: 10px;
+  box-sizing: content-box;
   color: ${(props) => props.theme.colors.secondary};
 `;
 

@@ -1,15 +1,18 @@
 import React from "react";
+import { LinksButton } from "../../components/links";
 
 import {
   Container,
   ProfileImage,
   ProfileName,
   ProfileSocial,
-  Link,
+  List,
   YoutubeLogo,
   InstagramLogo,
   TwitterLogo,
   GithubLogo,
+  Footer,
+  PersonalLink,
 } from "./styles";
 
 export const Links: React.FC = () => {
@@ -27,39 +30,19 @@ export const Links: React.FC = () => {
         @oanderoliveira
       </ProfileSocial>
 
-      <ul>
-        <li>
-          <Link href="/">
-            <YoutubeLogo />
-            YouTube
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <InstagramLogo />
-            Instagram
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <TwitterLogo />
-            Twitter
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <GithubLogo />
-            GitHub
-          </Link>
-        </li>
-      </ul>
+      <List>
+        <LinksButton icon={<YoutubeLogo />} name="YouTube" url="/" />
+        <LinksButton icon={<InstagramLogo />} name="Instagram" url="/" />
+        <LinksButton icon={<TwitterLogo />} name="Twitter" url="/" />
+        <LinksButton icon={<GithubLogo />} name="GitHub" url="/" />
+      </List>
 
-      <footer>
+      <Footer>
         Feito com um ⚡ pelo{" "}
-        <a href="https://github.com/andersamuel" target="_blank">
+        <PersonalLink href="https://github.com/andersamuel" target="_blank">
           Anderson Oliveira
-        </a>
-      </footer>
+        </PersonalLink>
+      </Footer>
     </Container>
   );
 };
