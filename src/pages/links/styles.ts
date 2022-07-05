@@ -11,7 +11,8 @@ const icon = css`
 `;
 
 export const Container = styled.div`
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +67,6 @@ export const ProfileSocial = styled.a`
 `;
 
 export const Link = styled.a`
-  width: 100%;
   height: 55px;
   color: ${(props) => props.theme.colors.secondary};
   font-size: 14px;
@@ -75,7 +75,7 @@ export const Link = styled.a`
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  margin-bottom: 18px;
+  margin: 0 20px 18px 20px;
   text-decoration: none;
   text-transform: uppercase;
   background-color: ${(props) => props.theme.colors.button};

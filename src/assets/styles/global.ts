@@ -9,16 +9,21 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: ${(props) => props.theme.colors.background};
   }
 
   body.sc-h69tZM {
     transition: background-color 300ms ease-in-out;
+  }
+
+  div#root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
