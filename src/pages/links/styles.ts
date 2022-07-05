@@ -45,8 +45,8 @@ export const ProfileImage = styled.img`
   max-height: 93px;
   border-radius: 50%;
   position: relative;
-  border: 4px solid ${(props) => props.theme.colors.firstBorder};
-  box-shadow: 0 0 0 4px ${(props) => props.theme.colors.secondBorder};
+  padding: 4px;
+  border: 4px solid ${(props) => props.theme.colors.border};
   position: relative;
 `;
 

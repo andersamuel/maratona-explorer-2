@@ -4,8 +4,7 @@ export default {
     primary: "#00082F",
     secondary: "#FFF",
 
-    firstBorder: "#EDF2FF",
-    secondBorder: "#4263EB",
+    border: "#4263EB",
 
     description: "#00082f93",
 
