@@ -22,7 +22,6 @@ export const Container = styled.div`
   ul {
     width: 100%;
     margin-top: 40px;
-    list-style: none;
 
     li {
       width: 100%;
@@ -34,7 +33,6 @@ export const Container = styled.div`
     color: ${(props) => props.theme.colors.description};
 
     a {
-      text-decoration: none;
       color: ${(props) => props.theme.colors.description};
     }
   }
@@ -76,7 +74,6 @@ export const Link = styled.a`
   justify-content: center;
   border-radius: 6px;
   margin: 0 20px 18px 20px;
-  text-decoration: none;
   text-transform: uppercase;
   background-color: ${(props) => props.theme.colors.button};
   transition: background-color 300ms ease-in-out;
